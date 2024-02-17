@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PizzaSushiWok</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="margarita_info">Пицца соус (томаты базилик орегано чеснок),\n
+        моцарелла для пиццы\n
+        Пищевая ценность на 100 г\n
+        Энерг. ценность - 238 ккал\n
+        Белки - 11.2 г\n
+        Жиры - 10.2 г\n
+        Углеводы - 25.4 г\n
+        Срок годности и условия хранения:24 часа при t° от +2°C до +6°C</string>
+    <string name="center_btn">Центрирование</string>
+    <string name="focus_chbox">Фокус</string>
+    <string name="menu_btn">Меню</string>
+    <string name="pizza_margarita">Пицца Маргарита</string>
+    <string name="pizzas">Пиццы</string>
+    <string name="margarita">Маргарита</string>
+    <string name="peperon">Пеперони</string>
+</resources>

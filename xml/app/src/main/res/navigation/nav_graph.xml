@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mapFragment">
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.pizzasushiwok.presentation.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_mapFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_out"
+            app:popExitAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.pizzasushiwok.presentation.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_sizeFragment"
+            app:destination="@id/sizeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_out"
+            app:popExitAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_categoryFragment_to_mapFragment"
+            app:destination="@id/mapFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_out"
+            app:popExitAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/sizeFragment"
+        android:name="com.example.pizzasushiwok.presentation.PizzasFragment"
+        android:label="fragment_size"
+        tools:layout="@layout/fragment_pizzas" >
+        <action
+            android:id="@+id/action_sizeFragment_to_pizzaInfoFragment"
+            app:destination="@id/pizzaInfoFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_out"
+            app:popExitAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_sizeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_out"
+            app:popExitAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/pizzaInfoFragment"
+        android:name="com.example.pizzasushiwok.presentation.PizzaInfoFragment"
+        android:label="fragment_pizza_info"
+        tools:layout="@layout/fragment_pizza_info" >
+        <action
+            android:id="@+id/action_pizzaInfoFragment_to_sizeFragment"
+            app:destination="@id/sizeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_out"
+            app:popExitAnim="@android:anim/fade_in" />
+    </fragment>
+</navigation>

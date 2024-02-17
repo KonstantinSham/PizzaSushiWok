@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.PizzasFragment">
+
+    <ImageButton
+        android:id="@+id/back_from_pizzas_menu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/pizzas"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/margarita_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/margarita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_from_pizzas_menu_btn" />
+
+    <TextView
+        android:id="@+id/margarita_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/margarita"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/margarita_iv"
+        app:layout_constraintStart_toEndOf="@+id/margarita_iv"
+        app:layout_constraintTop_toTopOf="@+id/margarita_iv" />
+
+    <ImageView
+        android:id="@+id/peperoni_iv"
+        android:layout_width="107dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/peperon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/margarita_iv" />
+
+    <TextView
+        android:id="@+id/peperoni_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/peperon"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/peperoni_iv"
+        app:layout_constraintStart_toEndOf="@+id/peperoni_iv"
+        app:layout_constraintTop_toTopOf="@+id/peperoni_iv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
